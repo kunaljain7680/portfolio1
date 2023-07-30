@@ -1,0 +1,314 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@keyframes colorChange{
+    0%,100%{
+        /* text-transform: lowercase; */
+        color: red;
+        margin-left: 0px;
+        text-shadow: 5px 5px 10px white;
+        letter-spacing: 2px;
+    }
+    50%{
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 15px;
+        margin-left: 200px;
+        text-shadow: 5px 5px 10px #c51919;
+    }
+}
+
+body{
+    font-family: 'Borel', cursive;
+    font-family: 'Tektur', cursive;
+    scroll-behavior:smooth ;
+}
+
+header{
+
+    background-color: rgb(12, 12, 12);
+    height: 850px;
+    box-shadow: 15px 0px 50px 5px red;
+}
+
+header nav .nav-div a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+    margin: 20px;
+}
+
+.logo img{
+    border-radius: 50%;
+    margin-right: 15px;
+    width:116px;
+}
+
+header nav .nav-div a:hover{
+    color: #c51919;
+}
+
+header nav{
+    padding: 2rem 0;
+}
+
+.nav-div{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 10rem;
+}
+
+
+.nav-div .right-btn button{
+    background-color:#c51919;
+    padding: 8px 30px;
+    margin-left: 400px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: black ;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.nav-div .right-btn button:hover{
+    cursor: pointer;
+    border-color:#c51919;
+    background-color: rgb(12,12,12);
+    color: #c51919;
+}
+
+.info{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-left: 95px;
+    margin-right: 30px;
+}
+
+.img-box {
+    position: relative;
+    right: 20px;
+}
+
+.right-info{
+    position: relative;
+    right: 25px;
+    width: 800px;
+    margin-top: 50px;
+}
+
+.right-info h6{
+    font-size: 20px;
+    color:#c51919;
+}
+
+.right-info h1{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.right-info h1 span{
+    animation: colorChange 3s linear;
+    animation-iteration-count: infinite; 
+}
+
+.right-info p{
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.second-btn button{
+    background-color: rgb(12,12,12);
+    padding: 8px 30px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color:#c51919;
+    border: 2px solid #c51919;
+    transition: all 0.4s ease;
+}
+
+.second-btn button:hover{
+    cursor: pointer;
+    background-color: #c51919;
+    color: black;
+}
+
+.about{
+    height: 500px;
+}
+
+
+.about-div {
+    display: flex;
+    margin-left: 180px;
+    margin-right: 200px;
+    margin-top: 220px;
+    justify-content: space-between;
+    
+}
+
+
+.about-info{
+    width: 525px;
+    margin-top: 60px;
+}
+
+.about-info h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.about-info h2 span{
+    color: #c51919;
+}
+
+.about-info h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.about-info p{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social a{
+    margin: 0px 30px;
+    opacity: 0.8;
+}
+
+.social a:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.social a img{
+    border-radius: 10px;
+}
+
+.services{
+    height: 400px;
+    background-color: rgb(12, 12, 12);
+    box-shadow: -30px 0px 50px 5px red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ser-head{
+    color: #c51919;
+    font-weight: 700;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -40px;
+    /* margin-bottom: 45px; */
+    letter-spacing: 5px;
+    animation: marque;
+}
+
+.ser-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ser-cards div{
+    color: black;
+    text-align: center;
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    margin: 0px 70px;
+    border: 1px solid black;
+    padding: 20px ;
+    font-weight: 700 ;
+    border-radius: 10px ;
+    transition: all 0.2s linear;
+    position: relative;
+}
+
+.ser-cards div:hover{
+    box-shadow: 0px 0px 25px red;
+    cursor:pointer;
+    bottom: -2px;
+}
+
+.ser-cards div h1 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color:red;
+}
+
+.getin{
+    display: flex ;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+}
+
+.getintouch{
+    display: flex;
+    flex-direction: column;
+}
+
+.getintouch p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.getintouch p span{
+    color: grey;
+    font-size: 18px;
+}
+
+.getintouch h2{
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.map iframe{
+    border-radius: 20px ;
+}
+
+.mar-div{
+    height:30px;
+}
+
+marquee{
+    height: 30px;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.getin-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    font-size: 25px;
+}
